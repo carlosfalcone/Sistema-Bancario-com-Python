@@ -1,0 +1,4 @@
+Saldo    - Data e hora: 22/12/2022 11:05:00,  Valor: R$0.0
+Deposito - Data e hora: 22/12/2022 12:47:44,  Valor: +R$4000.0,  Saldo: R$4000.0
+Saque    - Data e hora: 22/12/2022 12:47:49,  Valor: +R$1000.0,  Saldo: R$3000.0
+Deposito - Data e hora: 22/12/2022 12:48:29,  Valor: +R$500.0,  Saldo: R$3500.0
