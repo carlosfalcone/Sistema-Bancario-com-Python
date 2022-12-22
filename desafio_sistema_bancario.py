@@ -52,7 +52,7 @@ class ContaBancaria:
         valor_deposito=float(input('Digite o valor a ser depositado:'))
         dt_string=self.data_time()
         saldo=saldo+valor_deposito
-        impressao= (f'Deposito - Data e hora: {dt_string},  Valor: +R${valor_deposito},  Saldo: R${saldo}\n')
+        impressao= (f'Deposito - Data e hora: {dt_string},  Valor: +R${valor_deposito:.2f},  Saldo: R${saldo:.2f}\n')
         with open(f'{usuario_nome}_extrato.txt','a') as file:
             file.write(impressao)
         self.opcoes(primeiro_nome,usuario_nome,saldo)
@@ -64,7 +64,7 @@ class ContaBancaria:
             return
         dt_string=self.data_time()
         saldo=saldo-valor_saque
-        impressao= (f'Saque    - Data e hora: {dt_string},  Valor: +R${valor_saque},  Saldo: R${saldo}\n')
+        impressao= (f'Saque    - Data e hora: {dt_string},  Valor: +R${valor_saque:.2f},  Saldo: R${saldo:.2f}\n')
         with open(f'{usuario_nome}_extrato.txt','a') as file:
             file.write(impressao)  
         self.opcoes(primeiro_nome,usuario_nome,saldo)
